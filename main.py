@@ -76,24 +76,6 @@ def main():
         cv2.imwrite(os.path.join(RESULTS_PATH, "Output" + str(x) + ".jpg"), combined,
                     [int(cv2.IMWRITE_JPEG_QUALITY), 100])
 
-    # np.set_printoptions(suppress=True)
-    #
-    # image = cv2.imread("normal.jpg")
-    #
-    # gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
-    #
-    # mask = get_mask(gray)
-    #
-    # blurred = cv2.GaussianBlur(gray, (11, 11), 0)
-    #
-    # noisy = random_noise(blurred, mask, 0.4)
-    #
-    # cv2.imwrite("Ouput.jpg", noisy, [int(cv2.IMWRITE_JPEG_QUALITY), 2])
-    #
-    # cv2.imshow("Original", noisy)
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
-
 
 if __name__ == '__main__':
     main()
